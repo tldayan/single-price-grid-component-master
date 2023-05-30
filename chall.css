@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    padding: 5rem 2rem;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    box-shadow: .1rem .1rem .9rem .2rem  rgba(150, 148, 148, 0.25);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.item {
+    padding: 25px;
+}
+
+.subscribe {
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.monthly {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.whyus {
+    background-color: hsla(179, 62%, 43%, 0.699);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.primary { 
+    color: hsl(179, 62%, 43%);
+}
+
+.secondary {
+    color: hsl(71, 73%, 54%);
+    padding: 20px 0px;
+}
+
+h4, p {
+    color: rgb(255, 255, 255);
+}
+
+p {
+    padding: 20px 0px 20px 0px;
+} 
+
+.large-text{
+    font-size: 1.5rem;
+}
+
+.off-white {
+    opacity: 70%;
+}
+
+.small-text {
+    padding: 0px;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.gray {
+    color: hsl(218, 22%, 67%);
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    background-color: hsl(71, 73%, 54%);
+    display: block;
+    border-radius: 10px;
+    margin: 20px 0px 0px 0px;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.btn:hover, .btn:focus {
+    background-color: white;
+    color: hsl(179, 62%, 43%);
+}
+
+.whyus p {
+    padding: 0px;
+    font-size: .8rem;
+    line-height: 20px;
+}
+
+.whyus h4 {
+    margin-bottom: 15px;
+}
+
+@media (min-width:594px) {
+
+    body {
+        margin: 20px auto;
+        max-width: 700px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subscribe {
+        grid-column: 1 /  -1;
+    }
+
+    .monthly {
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    .whyus {
+        border-radius: 0px 0px 10px 0px;
+    }
+}
